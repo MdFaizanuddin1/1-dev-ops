@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 // console.log("origin is", process.env.CORS_ORIGIN);
+// CORS_ORIGIN=http://localhost # for using docker and nginx image 
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
